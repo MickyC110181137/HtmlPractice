@@ -64,7 +64,7 @@
     position: relative;
     width: 450px;
     height: 320px;
-
+    background-color: aliceblue;
 }
 
 .aboutText .box .videoBox{
@@ -76,6 +76,15 @@
 }
 
 .aboutText .box .videoBox video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.aboutText .box .videoBox img{
     position: absolute;
     top: 0;
     left: 0;
