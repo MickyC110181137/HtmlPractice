@@ -1,55 +1,88 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./index.css">
-        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-        <title>2022/10/3</title>
-    </head>
-    <body style="min-height: 1800px;">
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <label class="logo">Micky</label>
-            <ul>
-                <li><a href="./home.html" class="active">Home</a></li>
-                <li><a href="#" class="navBar">About</a></li>
-                <li><a href="./slide.html" class="navBar">Services</a></li>
-                <li><a href="#" class="navBar">Contact</a></li>
-                <li><a href="#" class="navBar">Feedback</a></li>
-            </ul>
-        </nav>
-        <div class="about">
-            <img src="./IMAGE/scroll/bg.jpg" id="bg">
-            <img src="./IMAGE/scroll/moon.png" id="moon">
-            <img src="./IMAGE/scroll/mountain.png" id="mountain">
-            <img src="./IMAGE/scroll/road.png" id="road">
-            <h2 id="text">Moon Light</h2>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./about.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>2022/10/3</title>
+</head>
+<body style="min-height: 1800px;">
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Micky</label>
+        <ul>
+            <li><a href="./home.html" class="active">Home</a></li>
+            <li><a href="#" class="navBar">About</a></li>
+            <li><a href="./slide.html" class="navBar">Services</a></li>
+            <li><a href="#" class="navBar">Contact</a></li>
+            <li><a href="#" class="navBar">Feedback</a></li>
+        </ul>
+    </nav>
+    <div class="about">
+        <img src="./IMAGE/scroll/bg.jpg" id="bg">
+        <img src="./IMAGE/scroll/moon.png" id="moon">
+        <img src="./IMAGE/scroll/mountain.png" id="mountain">
+        <img src="./IMAGE/scroll/road.png" id="road">
+        <h2 id="text">Moon Light</h2>
+    </div>
+    <div class="aboutText" style="min-height:1000px;background-color:#0a2a43">
+        <div class="box">
+            <div class="videoBox">
+                <video src="./video/1.mp4" muted autoplay loop></video>
+            </div>
+            <div class="textBox">
+                <div class="context">
+                    <h2>你以為這裡會寫甚麼嗎</h2>
+                    <p> kasjdfo fjdiasjfiosadj lkwjrwhnoie jdalsnfvoisahnfwen kwnen o
+                        sdkajfowejf jfdasoifjiowuo823jiomqkowueropzxocivu fnoiwejn
+                    </p>
+                </div>
+            </div>
         </div>
-        <div style="min-height:1000px;background-color:#0a2a43">
-
+        <div class="box">
+            <div class="videoBox">
+                <video src="./video/2.mp4" muted autoplay loop></video>
+            </div>
+            <div class="textBox">
+                <div class="context">
+                    <h2>看屁喔</h2>
+                    <p> kasjdfo fjdiasjfiosadj lkwjrwhnoie jdalsnfvoisahnfwen kwnen o
+                        sdkajfowejf jfdasoifjiowuo823jiomqkowueropzxocivu fnoiwejn
+                    </p>
+                </div>
+            </div>
         </div>
-    </body>
-    <script>
-        let bg = document.getElementById("bg");
-        let moon = document.getElementById("moon");
-        let mountain = document.getElementById("mountain");
-        let road = document.getElementById("road");
-        let text = document.getElementById("text"); 
-
-        window.addEventListener('scroll',function(){
-            let value = window.scrollY;
-
-            bg.style.top = value*0.5 +'px'
-            moon.style.left = -value*0.5 +'px'
-            mountain.style.top = -value*0.15 +'px'
-            road.style.top = value*0.15 +'px'
-            text.style.top = value*1 +'px'
-        })
-
-    </script>
+    </div> 
+</body>
 </html>
+
+<script>
+    let bg = document.getElementById("bg");
+    let moon = document.getElementById("moon");
+    let mountain = document.getElementById("mountain");
+    let road = document.getElementById("road");
+    let text = document.getElementById("text"); 
+
+    window.addEventListener('scroll',function(){
+        let value = window.scrollY;
+
+        bg.style.top = value*0.5 +'px'
+        moon.style.left = -value*0.5 +'px'
+        mountain.style.top = -value*0.15 +'px'
+        road.style.top = value*0.15 +'px'
+        text.style.top = value*1 +'px'
+    })
+
+    let progress = document.getElementById('progressbar');
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+    window.onscroll = function(){
+        let progressHeight = (window.pageYOffset/totalHeight) * 100;
+        progress.style.height = progressHeight + "%"
+    }
+</script>
