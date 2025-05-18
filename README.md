@@ -17,7 +17,7 @@ document.addEventListener('mousemove', function(e) {
 });
 ```
 
-## 2.SCrollBar效果  
+## 2.ScrollBar效果  
 
 ![image](https://github.com/MickyC110181137/Index/blob/main/video/ScrollBar.gif)
 
