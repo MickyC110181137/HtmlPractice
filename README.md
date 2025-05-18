@@ -1,5 +1,6 @@
-Cursor效果介紹
-![image](https://github.com/MickyC110181137/Index/tree/main/video/Cursor.gif)
+#此專案為純html練習，包含 CursorEffect, ScrollBar Effect, SliderImg
+##Cursor效果介紹
+![image](https://github.com/MickyC110181137/Index/blob/main/video/Cursor.gif)
 ```javascript
 const cursor = document.querySelector('.cursor');
 // 為整個文件綁定滑鼠移動事件
