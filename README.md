@@ -1,4 +1,4 @@
-#此專案為純html練習，包含 CursorEffect, ScrollBar Effect, SliderImg
+#此專案為純html練習，包含 CursorEffect, ScrollBar Effect, SliderImg  
 ##Cursor效果介紹
 ![image](https://github.com/MickyC110181137/Index/blob/main/video/Cursor.gif)
 ```javascript
